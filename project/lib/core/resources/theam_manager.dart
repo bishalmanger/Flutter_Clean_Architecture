@@ -29,7 +29,7 @@ ThemeData getApplicationTheme()
       color: ColorManager.primaryBackgroundColor,
       elevation: AppSize.m8,
       shadowColor: ColorManager.primaryBackgroundColor,
-      titleTextStyle: getRegularStyle(color: ColorManager.primaryGrayColor) as TextStyle?,
+      titleTextStyle: getRegularStyle(color: ColorManager.primaryGrayColor),
    ),
 
 
@@ -45,7 +45,7 @@ ThemeData getApplicationTheme()
    //Elevated button theme
    elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-         textStyle: getRegularStyle(color: ColorManager.primaryWhiteColor) as TextStyle?, 
+         textStyle: getRegularStyle(color: ColorManager.primaryWhiteColor),
           backgroundColor: ColorManager.primaryBackgroundColor,
          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppSize.m12))
       )
@@ -53,21 +53,21 @@ ThemeData getApplicationTheme()
 
    //Text theme
    textTheme: TextTheme(
-     headlineLarge: getSemiStyle(color: ColorManager.primaryGrayColor, fontSize: FontSize.s16) as TextStyle?,
-      titleLarge: getMediumStyle(color: ColorManager.primaryGrayColor, fontSize: FontSize.s14) as TextStyle?,
-      bodySmall: getRegularStyle(color: ColorManager.primaryGrayColor) as TextStyle?,
-      bodyLarge: getRegularStyle(color: ColorManager.primaryGrayColor) as TextStyle?,
+     headlineLarge: getSemiStyle(color: ColorManager.primaryGrayColor, fontSize: FontSize.s16),
+      titleLarge: getMediumStyle(color: ColorManager.primaryGrayColor, fontSize: FontSize.s14),
+      bodySmall: getRegularStyle(color: ColorManager.primaryGrayColor),
+      bodyLarge: getRegularStyle(color: ColorManager.primaryGrayColor),
    ),
    //Input decoration theme (text form field)
    inputDecorationTheme: InputDecorationTheme(
       contentPadding: EdgeInsets.all(AppPadding.m8),
-      hintStyle: getRegularStyle(color: ColorManager.primaryGrayColor) as TextStyle?,
+      hintStyle: getRegularStyle(color: ColorManager.primaryGrayColor),
 
       // label style
-      labelStyle: getRegularStyle(color: ColorManager.primaryGrayColor) as TextStyle?,
+      labelStyle: getRegularStyle(color: ColorManager.primaryGrayColor),
 
       // error style
-      errorStyle: getRegularStyle(color: ColorManager.primaryRedColor) as TextStyle?,
+      errorStyle: getRegularStyle(color: ColorManager.primaryRedColor),
 
       enabledBorder: OutlineInputBorder(
          borderSide: BorderSide(color: ColorManager.primaryGrayColor, width: AppSize.m8),

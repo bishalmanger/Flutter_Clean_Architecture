@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:project/core/resources/theam_manager.dart';
+import 'package:project/presentation/routers/routers_manager.dart';
 
 void main()
 {
@@ -11,13 +13,10 @@ class CleanArchitectureDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          appBar: AppBar(title: const Text("Counter App",
-            style: TextStyle(fontFamily: 'Tagesschrift', fontWeight: FontWeight.w400),
-
-          ),centerTitle: true,),
-        ),
+      onGenerateRoute: RouteGenerator.getRoute,
+      initialRoute: Routes.splashRoute,
+      theme: getApplicationTheme(),
+      debugShowCheckedModeBanner: false
     );
   }
 }
